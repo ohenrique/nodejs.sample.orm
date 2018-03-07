@@ -1,0 +1,19 @@
+{
+  "name": "nodejs.sample.orm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --config test/jest.config.js"
+  },
+  "repository": "git+https://github.com/ohenrique/nodejs.sample.orm.git",
+  "author": "Henrique Oliveira",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ohenrique/nodejs.sample.orm/issues"
+  },
+  "homepage": "https://github.com/ohenrique/nodejs.sample.orm#readme",
+  "dependencies": {
+    "jest": "^22.4.2"
+  }
+}
