@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --config test/jest.config.js"
+    "test": "jest --config test/jest.config.js",
+    "migrate:up": "knex migrate:latest --knexfile ./src/data/context/config.js",
+    "migrate:down": "knex migrate:rollback --knexfile ./src/data/context/config.js"
   },
   "repository": "git+https://github.com/ohenrique/nodejs.sample.orm.git",
   "author": "Henrique Oliveira",
@@ -14,6 +16,8 @@
   },
   "homepage": "https://github.com/ohenrique/nodejs.sample.orm#readme",
   "dependencies": {
-    "jest": "^22.4.2"
+    "jest": "^22.4.2",
+    "knex": "^0.14.4",
+    "pg": "^7.4.1"
   }
 }
